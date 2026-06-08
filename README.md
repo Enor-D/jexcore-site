@@ -11,3 +11,9 @@ Static website prepared from the JexCore short corporate presentation.
 ## Deployment
 Upload all files to a GitHub repository, then import the repository in Vercel.
 For the root domain on Vercel use A record `76.76.21.21` and configure `www` as a CNAME according to Vercel instructions.
+
+
+## Languages
+- `index.html` — Russian version
+- `en.html` — English version
+- Use the RU/EN switch in the site header to navigate between versions.
