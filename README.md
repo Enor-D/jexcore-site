@@ -1,0 +1,13 @@
+# JexCore Drilling website
+
+Static website prepared from the JexCore short corporate presentation.
+
+## Files
+- `index.html` — main page
+- `styles.css` — responsive styling
+- `script.js` — mobile navigation
+- `assets/jexcore-logo.png` — logo
+
+## Deployment
+Upload all files to a GitHub repository, then import the repository in Vercel.
+For the root domain on Vercel use A record `76.76.21.21` and configure `www` as a CNAME according to Vercel instructions.
