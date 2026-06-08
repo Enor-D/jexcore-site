@@ -17,3 +17,6 @@ For the root domain on Vercel use A record `76.76.21.21` and configure `www` as 
 - `index.html` — Russian version
 - `en.html` — English version
 - Use the RU/EN switch in the site header to navigate between versions.
+
+
+Дополнительно добавлены favicon-файлы: `assets/favicon.png` и `assets/favicon.ico`.
