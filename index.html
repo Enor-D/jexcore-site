@@ -1,245 +1,206 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>JexCore Drilling — буровая компания полного цикла</title>
-  <meta name="description" content="JexCore Drilling — буровая компания полного цикла в Казахстане: алмазное колонковое бурение HQ/NQ/BQ, сопровождение керна, документация KAZRC/JORC, HSE." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="alternate" hreflang="ru" href="index.html" />
-  <link rel="alternate" hreflang="en" href="en.html" />
-  <link rel="stylesheet" href="styles.css" />
-
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="apple-touch-icon" href="assets/favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>JexCore Drilling — Ваш надёжный партнёр в геологоразведке</title>
+  <meta name="description" content="JexCore Drilling — ваш надёжный партнёр в геологоразведке. Колонковое бурение, высокие стандарты HSE, современные полевые операции в Казахстане.">
+  <meta name="theme-color" content="#101416">
+  <meta property="og:title" content="JexCore Drilling | Ваш надёжный партнёр в геологоразведке">
+  <meta property="og:description" content="High-standard drilling operations. Documented safety. Connected field teams.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main" data-i18n="skip">Перейти к содержанию</a>
+  <div class="preheader">
+    <div class="container preheader-inner">
+      <span class="signal"><i></i><span data-i18n="topLeft">БУРЕНИЕ · HSE · ЦИФРОВЫЕ ОПЕРАЦИИ</span></span>
+      <span class="preheader-location" data-i18n="topRight">КАЗАХСТАН · 2026 → 2028</span>
+    </div>
+  </div>
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="JexCore Drilling">
-        <img src="assets/jexcore-logo.png" alt="JexCore Drilling logo" />
-        <span>JexCore</span>
+      <a class="brand" href="#top" aria-label="JexCore Drilling — главная">
+        <span class="brand-icon" aria-hidden="true"><span class="brand-chevron"></span><span class="brand-bar"></span></span>
+        <span class="brand-lockup"><strong>JEXCORE<span>DRILLING</span></strong><small>ENGINEERED TO DELIVER</small></span>
       </a>
-      <nav class="nav" id="nav">
-        <a href="#about">О компании</a>
-        <a href="#services">Услуги</a>
-        <a href="#fleet">Парк техники</a>
-        <a href="#projects">Проекты</a>
-        <a href="#hse">HSE</a>
-        <a href="#contacts">Контакты</a>
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="#about" data-i18n="navAbout">О компании</a>
+        <a href="#capabilities" data-i18n="navServices">Услуги</a>
+        <a href="#hse" data-i18n="navHse">HSE</a>
+        <a href="#digital" data-i18n="navDigital">Digital</a>
+        <a href="#strategy" data-i18n="navStrategy">Стратегия</a>
+        <a href="#updates" data-i18n="navUpdates">Новости</a>
       </nav>
-      <div class="lang-switch" aria-label="Выбор языка"><a class="active" href="index.html">RU</a><a href="en.html">EN</a></div>
-      <button class="menu-btn" id="menuBtn" aria-label="Открыть меню"><span></span><span></span></button>
+      <div class="header-actions">
+        <button class="lang-switch" id="languageSwitch" type="button" aria-label="Switch language"><span class="lang-active">RU</span><span class="lang-divider">/</span><span class="lang-inactive">EN</span></button>
+        <a href="#contact" class="header-contact" data-i18n="navContact">Связаться <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
+      </div>
     </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Мобильная навигация">
+      <a href="#about" data-i18n="navAbout">О компании</a><a href="#capabilities" data-i18n="navServices">Услуги</a><a href="#hse">HSE</a><a href="#digital">Digital</a><a href="#strategy" data-i18n="navStrategy">Стратегия</a><a href="#updates" data-i18n="navUpdates">Новости</a><a href="#contact" data-i18n="navContact">Связаться</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="eyebrow">EST. 2025 · Буровая компания · Kazakhstan</div>
-          <h1>Ваш надёжный партнёр в геологоразведке</h1>
-          <p>JexCore Drilling — буровая компания полного цикла, созданная командой опытных буровиков для выполнения проектов любой сложности.</p>
+  <main id="main">
+    <section class="hero" aria-labelledby="heroHeading">
+      <div class="hero-visual" aria-hidden="true"><picture><source media="(max-width:760px)" srcset="assets/photos/hero-rig-jexcore-m.jpg"><img src="assets/photos/hero-rig-jexcore.jpg" alt="" class="hero-photo hero-photo-rig" fetchpriority="high"></picture><div class="hero-visual-tint"></div></div>
+      <div class="hero-wire" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <div class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span><span data-i18n="heroEyebrow">EST. 2025 · БУРОВАЯ КОМПАНИЯ · КАЗАХСТАН</span></div>
+          <h1 id="heroHeading"><span data-i18n="heroTitle1">Ваш надёжный партнёр в</span> <span data-i18n="heroTitle2">геологоразведке</span></h1>
+          <p class="hero-lede" data-i18n="heroLede">JexCore Drilling — буровая компания полного цикла, созданная командой опытных буровиков для выполнения проектов любой сложности.</p>
           <div class="hero-actions">
-            <a class="btn primary" href="#contacts">Обсудить проект</a>
-            <a class="btn ghost" href="#fleet">Парк оборудования</a>
+            <a href="#about" class="button button-primary"><span data-i18n="heroPrimary">Узнать о JexCore</span><span aria-hidden="true">↗</span></a>
+            <a href="#hse" class="button button-secondary"><span data-i18n="heroSecondary">Наш подход к HSE</span><span aria-hidden="true">↗</span></a>
           </div>
-        </div>
-        <aside class="hero-card">
-          <div class="card-logo"><img src="assets/jexcore-logo.png" alt="JexCore icon"></div>
-          <div class="metric"><strong>4</strong><span>буровые установки</span></div>
-          <div class="metric"><strong>20+</strong><span>лет опыта основателей</span></div>
-          <div class="metric"><strong>100%</strong><span>полный цикл работ</span></div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section about" id="about">
-      <div class="container two-col">
-        <div>
-          <div class="section-kicker">О компании</div>
-          <h2>Команда буровиков с предпринимательской и инженерной экспертизой</h2>
-        </div>
-        <div class="lead-block">
-          <p>Мы объединяем практический опыт буровых работ, инженерно-операционную экспертизу и предпринимательский подход, чтобы выполнять задачи любого уровня сложности — от мобилизации до финальной отчётности.</p>
-          <p>Компания специализируется на алмазном колонковом бурении, субподрядных проектах и полном сопровождении геологоразведочных работ.</p>
+          <div class="hero-partner"><span class="hero-partner-rule"></span><span data-i18n="heroPartner">В ПАРТНЁРСТВЕ С</span><strong>APOLLO RESOURCES GROUP</strong></div>
         </div>
       </div>
+      <div class="hero-image-caption"><span class="caption-dot"></span><span data-i18n="heroCaption">FALCON ZQ-2000T · ПОЛЕВЫЕ ОПЕРАЦИИ JEXCORE</span><span class="caption-index">01 — 04</span></div>
+      <div class="hero-bottom container"><span data-i18n="heroBottom">FROM THE GROUND UP · BUILT FOR THE FIELD</span><a href="#performance"><span data-i18n="scroll">ЛИСТАЙТЕ ВНИЗ</span><span aria-hidden="true">↓</span></a></div>
     </section>
 
-    <section class="section services" id="services">
+    <section class="metrics section-dark" id="performance" aria-label="Компания в цифрах">
+      <div class="container metrics-grid">
+        <div class="metric metric-lead"><span class="metric-kicker" data-i18n="metricLead">2026 / ФАКТЫ И ПРОГРЕСС</span><div class="metric-big"><span class="counter" data-target="15000">15 000</span><span class="plus">+</span></div><p data-i18n="metric1">погонных метров бурения за 2026 год*</p></div>
+        <div class="metric"><span class="metric-kicker">HSE MANAGEMENT</span><div class="metric-big"><span class="counter" data-target="110">110</span><span class="plus">+</span></div><p data-i18n="metric2">контролируемых документов и рабочих инструментов HSE</p></div>
+        <div class="metric"><span class="metric-kicker">FIELD OPERATIONS</span><div class="metric-big metric-icon">3<span class="plus">×</span></div><p data-i18n="metric3">уровня полевой связи: база, буровые и транспорт</p></div>
+        <div class="metric metric-year"><span class="metric-kicker">THE NEXT CHAPTER</span><div class="metric-big">27<span class="metric-dash">—</span>28</div><p data-i18n="metric4">дорожная карта цифровизации и энергоэффективности</p></div>
+      </div>
+      <div class="container metric-footnote" data-i18n="metricNote">*Показатель 2026 года приведён по данным руководства компании; обновляется по итоговой производственной отчётности.</div>
+    </section>
+
+    <section class="client-band client-band-xl" id="about" aria-labelledby="clientsHeading">
       <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker">Услуги</div>
-            <h2>Полный цикл буровых работ</h2>
+        <div class="client-head"><span class="section-tag">01 / 06</span><h2 id="clientsHeading" data-i18n="clientCaption">Клиенты и стратегические партнёры</h2></div>
+        <div class="client-grid">
+          <div class="client-cell"><div class="client-wordmark client-mogotes">MOGOTES <small>METALS</small></div><span class="client-role" data-i18n="clientRole1">Клиент</span></div>
+          <div class="client-cell"><div class="client-wordmark client-pallas">PALLAS <small>RESOURCES</small></div><span class="client-role" data-i18n="clientRole2">Клиент</span></div>
+          <div class="client-cell"><div class="client-wordmark client-apollo">APOLLO <small>RESOURCES GROUP</small></div><span class="client-role" data-i18n="clientRole3">Стратегический партнёр</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-about">
+      <div class="container split-intro">
+        <div class="section-intro reveal"><div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="aboutEyebrow">О КОМПАНИИ</span></div><h2 data-i18n="aboutTitle">Сегодня JexCore — это не просто буровые установки.</h2></div>
+        <div class="section-detail reveal"><p class="lead" data-i18n="aboutLead">Мы выстраиваем операционную платформу, где инженерия, безопасность, контроль качества и цифровая связь работают как единая система.</p><p data-i18n="aboutBody">В 2026 году команда JexCore обеспечивала буровые работы для Mogotes Metals, приступила к программе с Pallas Resources и внедрила корпоративную систему HSE. Следующий этап — масштабирование этого стандарта на новые объекты.</p><a class="text-link" href="#strategy"><span data-i18n="aboutLink">Посмотреть план развития</span><span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="container progress-grid">
+        <article class="progress-card reveal"><span class="progress-number">01</span><div class="progress-symbol"><svg viewBox="0 0 56 56" fill="none" aria-hidden="true"><path d="M12 42V20L28 9L44 20V42M12 27H44M22 16V42M34 16V42M10 46H46" stroke="currentColor" stroke-width="1.5"/><path d="M22 27L34 39M34 27L22 39" stroke="currentColor" stroke-width="1.5"/></svg></div><h3 data-i18n="progress1Title">Операционная готовность</h3><p data-i18n="progress1Text">Буровые программы, мобилизация, зимняя эксплуатация, керновое хозяйство и сопровождение работ.</p></article>
+        <article class="progress-card reveal"><span class="progress-number">02</span><div class="progress-symbol"><svg viewBox="0 0 56 56" fill="none" aria-hidden="true"><path d="M28 6L45 13V26C45 38 37 46 28 50C19 46 11 38 11 26V13L28 6Z" stroke="currentColor" stroke-width="1.5"/><path d="M19 27L25 33L37 20" stroke="currentColor" stroke-width="2"/></svg></div><h3 data-i18n="progress2Title">Проверяемая безопасность</h3><p data-i18n="progress2Text">Единая система процедур, обучение по рискам, технические защиты и готовность к инцидентам.</p></article>
+        <article class="progress-card reveal"><span class="progress-number">03</span><div class="progress-symbol"><svg viewBox="0 0 56 56" fill="none" aria-hidden="true"><circle cx="28" cy="28" r="17" stroke="currentColor" stroke-width="1.5"/><circle cx="28" cy="28" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M28 4V14M28 42V52M4 28H14M42 28H52" stroke="currentColor" stroke-width="1.5"/></svg></div><h3 data-i18n="progress3Title">Цифровая видимость</h3><p data-i18n="progress3Text">Starlink и GPS уже поддерживают связь в поле. Переходим к единой карте операций и инструментам удалённого контроля.</p></article>
+      </div>
+    </section>
+
+    <section class="section section-services" id="capabilities">
+      <div class="container"><div class="section-heading-row reveal"><div><div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="serviceEyebrow">НАШИ КОМПЕТЕНЦИИ</span></div><h2 data-i18n="serviceTitle">От мобилизации до финального метра.</h2></div><p data-i18n="serviceIntro">Комплексные буровые программы с единым стандартом качества, производственной дисциплины и HSE.</p></div>
+      <div class="services-grid">
+        <article class="service-card service-card-feature reveal"><div class="service-card-art drill-pattern" aria-hidden="true"><div class="drill-drawing"><span></span><span></span><span></span></div></div><span class="service-index">01 / CORE</span><h3 data-i18n="service1Title">Алмазное колонковое бурение</h3><p data-i18n="service1Text">Разведочные скважины HQ / NQ / BQ и программы со специальными требованиями к диаметру, глубине и отбору керна.</p><span class="service-outcome" data-i18n="service1Tag">ОСНОВНОЕ НАПРАВЛЕНИЕ</span></article>
+        <article class="service-card reveal"><div class="service-small-icon">↗</div><span class="service-index">02 / DELIVERY</span><h3 data-i18n="service2Title">Комплексное сопровождение проектов</h3><p data-i18n="service2Text">Мобилизация, логистика, буровые лагеря, техническое сопровождение, работа с керном и ежедневная отчётность.</p><span class="service-outcome" data-i18n="service2Tag">ДЕЙСТВУЮЩАЯ КОМПЕТЕНЦИЯ</span></article>
+        <article class="service-card reveal"><div class="service-small-icon">◎</div><span class="service-index">03 / RC</span><h3 data-i18n="service3Title">RC-бурение</h3><p data-i18n="service3Text">Развитие RC-направления: подбор установки и конфигурации под программы заказчиков в 2027 году.</p><span class="service-outcome planned" data-i18n="service3Tag">ПЛАНИРУЕМОЕ НАПРАВЛЕНИЕ</span></article>
+      </div>
+      <div class="fleet-strip reveal"><div class="fleet-caption"><span class="section-tag">FLEET / FIELD READY</span><h3 data-i18n="fleetTitle">Техника для разных буровых задач</h3></div><div class="fleet-models"><span>BOYLES C6</span><span>PD500</span><span>CDH-1600</span><span>ZQ-2000T</span><span>GSQX-1600</span></div><p data-i18n="fleetNote">Указаны модели, задействованные или рассматриваемые в операционном парке; доступность и конфигурация подтверждаются под проект.</p></div>
+      </div>
+    </section>
+
+    <section class="section section-hse" id="hse">
+      <div class="hse-glow" aria-hidden="true"></div>
+      <div class="container hse-top reveal"><div><div class="eyebrow"><span class="eyebrow-line"></span>HSE MANAGEMENT SYSTEM</div><h2><span data-i18n="hseTitle1">Безопасность —</span><br><em data-i18n="hseTitle2">встроена в систему.</em></h2></div><p data-i18n="hseIntro">В 2026 году JexCore подготовила, утвердила и внедрила комплексную систему охраны труда, промышленной и экологической безопасности. Мы показываем масштаб системы, не раскрывая внутренние процедуры.</p></div>
+      <div class="container hse-stats reveal"><div class="hse-main-stat"><div class="hse-main-value">110<span>+</span></div><p data-i18n="hseStatMain">управляемых HSE-документов и практических инструментов</p><span class="status-line"><i></i><span data-i18n="statusImplemented">ВНЕДРЕНО В 2026</span></span></div><div class="hse-stat-grid"><div><strong>18</strong><span data-i18n="hseS1">процедур</span></div><div><strong>16</strong><span data-i18n="hseS2">планов</span></div><div><strong>13</strong><span data-i18n="hseS3">программ</span></div><div><strong>15</strong><span data-i18n="hseS4">реестров</span></div></div></div>
+      <div class="container hse-pillars">
+        <article class="hse-pillar reveal"><div class="hse-pillar-mark">01 <span>↗</span></div><h3 data-i18n="hseP1">Управление рисками</h3><p data-i18n="hseP1Body">Утверждённые правила, контроль документов, подготовка работ и обучение персонала в соответствии с рисками.</p></article>
+        <article class="hse-pillar reveal"><div class="hse-pillar-mark">02 <span>↗</span></div><h3 data-i18n="hseP2">Безопасность оборудования</h3><p data-i18n="hseP2Body">Защитные блокировки, ограничители подъёма и автоматическое пожаротушение на оснащённых установках. Единый стандарт для парка — следующий шаг.</p></article>
+        <article class="hse-pillar reveal"><div class="hse-pillar-mark">03 <span>↗</span></div><h3 data-i18n="hseP3">Готовность к реагированию</h3><p data-i18n="hseP3Body">Медицинская поддержка, первая помощь, резервные каналы связи и определённый порядок эскалации происшествий.</p></article>
+      </div>
+      <div class="container hse-photos reveal">
+        <figure><img src="assets/photos/hse-first-aid.jpg" alt="Культура безопасности JexCore · визуализация" loading="lazy" data-i18n-alt="hsePhoto1"><figcaption data-i18n="hsePhoto1">Культура безопасности JexCore · визуализация</figcaption></figure>
+        <figure><img src="assets/photos/hse-guard.jpg" alt="Буровая установка на рабочей площадке" loading="lazy" data-i18n-alt="hsePhoto2"><figcaption data-i18n="hsePhoto2">Буровая установка на рабочей площадке</figcaption></figure>
+        <figure><img src="assets/photos/hse-crew-ppe.jpg" alt="Буровая площадка на вечерней смене" loading="lazy" data-i18n-alt="hsePhoto4"><figcaption data-i18n="hsePhoto4">Буровая площадка на вечерней смене</figcaption></figure>
+        <figure><img src="assets/photos/hse-fire-point.jpg" alt="Противопожарный пост на буровой площадке" loading="lazy" data-i18n-alt="hsePhoto3"><figcaption data-i18n="hsePhoto3">Противопожарный пост на буровой площадке</figcaption></figure>
+        
+      </div>
+      <div class="container hse-bottom"><p data-i18n="hseFooter">Операционная HSE-система внедрена. Дальнейшая унификация защит и оснащения буровых входит в план 2027 года.</p><a href="#contact" class="text-link light-link"><span data-i18n="hseCta">Запросить информацию для HSE-проверки</span><span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="section section-digital" id="digital">
+      <div class="container digital-grid"><div class="digital-copy reveal"><div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="digitalEyebrow">CONNECTED FIELD OPERATIONS</span></div><h2 data-i18n="digitalTitle">Видим больше. Управляем точнее.</h2><p class="lead" data-i18n="digitalLead">Starlink и Garmin GPS создают связанный контур работы в поле. Следующий этап — единый интерфейс для объектов, техники, связи и отчётности.</p>
+          <div class="digital-points"><div><span class="point-icon">01</span><div><strong data-i18n="digital1T">CONNECTED</strong><p data-i18n="digital1B">Спутниковая связь на базе, установках и полевом транспорте.</p></div></div><div><span class="point-icon">02</span><div><strong data-i18n="digital2T">VISIBLE</strong><p data-i18n="digital2B">GPS, маршруты и единая операционная карта — поэтапное развитие.</p></div></div><div><span class="point-icon">03</span><div><strong data-i18n="digital3T">TRANSPARENT</strong><p data-i18n="digital3B">Документированные процессы и понятная отчётность в согласованном с клиентом формате.</p></div></div></div>
+          <span class="digital-tiny" data-i18n="digitalDisclaimer">Демонстрационная схема полевого объекта: Starlink, GPS и маршрут водовоза. Не содержит реальных координат или данных клиентов.</span>
+        </div>
+        <div class="ops-demo reveal" aria-label="Схема полевого объекта JexCore: Starlink и GPS" data-i18n-aria="opsAria">
+          <div class="ops-top"><div class="ops-logo"><span class="ops-square"></span>JEXCORE<span> / OPERATIONS MAP</span></div><div class="ops-system"><i></i><span data-i18n="opsDemo">STARLINK + GPS</span></div></div>
+<div class="ops-stage">
+          <div class="site-scheme" data-pane-id="scheme">
+            <svg viewBox="0 0 680 400" role="img" aria-labelledby="schemeTitle schemeDesc" id="siteScheme">
+              <title id="schemeTitle" data-i18n="schemeTitle">Схема полевого объекта JexCore</title>
+              <desc id="schemeDesc" data-i18n="schemeDesc">База, буровая и источник воды на связи через Starlink; водовоз и вахтовый транспорт видны по GPS. Схема без реальных координат.</desc>
+              <defs>
+                <radialGradient id="ssBg" cx="55%" cy="45%" r="75%"><stop offset="0" stop-color="#22373b"/><stop offset="1" stop-color="#111d21"/></radialGradient>
+                <pattern id="ssGrid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#82a09d" stroke-opacity=".07"/></pattern>
+              </defs>
+              <rect width="680" height="400" fill="url(#ssBg)"/><rect width="680" height="400" fill="url(#ssGrid)"/>
+              <g fill="none" stroke="#6f8c87" stroke-opacity=".13"><path d="M-10 110C120 80 260 140 380 104S600 60 700 92"/><path d="M-10 190C140 160 250 220 400 180S590 150 700 176"/><path d="M-10 360C150 330 300 380 440 342S620 320 700 340"/></g>
+              <g id="ssBeams" stroke="#c8945e" stroke-width="1" stroke-dasharray="2 6" opacity=".55"></g>
+              <path id="ssRouteWater" d="M492 156C400 168 262 228 118 298" fill="none" stroke="#5ec8ff" stroke-width="2" stroke-dasharray="5 6" opacity=".75"/>
+              <path id="ssRouteBase" d="M556 306C584 252 560 204 500 160" fill="none" stroke="#d6a16c" stroke-width="2" stroke-dasharray="5 6" opacity=".7"/>
+              <text x="276" y="214" class="ss-route" data-i18n="schemeRouteWater" transform="rotate(-21 276 214)">маршрут водовоза</text>
+              <g id="ssTrail" fill="#5ec8ff"></g>
+              <!-- satellite -->
+              <g transform="translate(340 46)"><circle r="24" fill="#c8945e" fill-opacity=".08"/><g class="ss-sat"><rect x="-6" y="-6" width="12" height="12" rx="2" fill="#e9d7c2"/><rect x="-26" y="-5" width="17" height="10" fill="#c8945e"/><rect x="9" y="-5" width="17" height="10" fill="#c8945e"/><path d="M-26 0h17M9 0h17M-17.5-5v10M17.5-5v10" stroke="#1a2a2e" stroke-width="1"/></g><text y="38" class="ss-tag" text-anchor="middle">STARLINK</text></g>
+              <!-- water source -->
+              <g transform="translate(110 300)"><circle r="22" class="ss-ping ss-ping-blue"/><circle r="17" fill="#0d1a16" stroke="#5ec8ff" stroke-width="2"/><path d="M0-10c.5 2.6 2 5 4 6.7s3 3.7 3 5.9a7 7 0 0 1-14 0c0-2.2 1-4.2 3-5.9S-.5-7.4 0-10z" fill="#5ec8ff"/><text y="38" class="ss-label" text-anchor="middle" data-i18n="schemeWater">Источник воды</text></g>
+              <!-- rig -->
+              <g transform="translate(496 156)"><circle r="24" class="ss-ping"/><circle r="19" fill="#0d1a16" stroke="#f3ad45" stroke-width="2"/><g fill="none" stroke="#f3ad45" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" transform="translate(-12 -12)"><path d="M9.6 18.5 11 2.8h2L14.4 18.5"/><path d="M10.3 13.6h3.4M10.7 8.6h2.6M10.3 13.6l3-5M10.7 8.6l2-5"/><rect x="3.5" y="18.5" width="17" height="3" rx="1.5"/><path d="M15 14.2h4.2v4.3H15z"/></g><text x="30" y="-6" class="ss-label" data-i18n="schemeRig">Буровая</text><g transform="translate(30 4)"><rect width="74" height="18" rx="9" class="ss-chip"/><text x="37" y="12.5" text-anchor="middle" class="ss-chip-t">STARLINK</text></g></g>
+              <!-- base: four containers around a yard -->
+              <g transform="translate(560 312)"><circle r="28" class="ss-ping"/><g transform="translate(-20 -20)"><rect x="0" y="0" width="40" height="40" rx="4" fill="#0d1a16" stroke="#e9d7c2" stroke-width="1.5"/><rect x="11" y="11" width="18" height="18" fill="#d6c497"/><g fill="#3a4752" stroke="#f4f6f5" stroke-width=".8"><rect x="4" y="4" width="32" height="6"/><rect x="4" y="30" width="32" height="6"/><rect x="30" y="10.6" width="6" height="18.8"/><rect x="4" y="10.6" width="6" height="10"/></g></g><text x="-34" y="-6" class="ss-label" text-anchor="end" data-i18n="schemeBase">База</text><g transform="translate(-108 4)"><rect width="74" height="18" rx="9" class="ss-chip"/><text x="37" y="12.5" text-anchor="middle" class="ss-chip-t">STARLINK</text></g></g>
+              <!-- vehicles -->
+              <g id="ssWater" transform="translate(492 156)"><g class="ss-flip"><g class="v-body"><rect x="-19" y="-8" width="24" height="10" rx="5" fill="#d1a64d" stroke="#0d1a16" stroke-width=".8"/><path d="M6-7.5h6.4l4.6 5v5.6H6z" fill="#4d6b45" stroke="#0d1a16" stroke-width=".8"/><path d="M7.9-5.8h3.8l3.2 3.4h-7z" fill="#cfe3ea"/><rect x="-19" y="2" width="36" height="2.4" rx="1" fill="#22302b"/><g fill="#0d1a16" stroke="#f5f8f6" stroke-width="1.1"><circle cx="-13" cy="5.4" r="3"/><circle cx="-4.5" cy="5.4" r="3"/><circle cx="11.5" cy="5.4" r="3"/></g></g></g><g transform="translate(-16 -30)"><rect width="32" height="15" rx="7.5" class="ss-chip ss-chip-gps"/><text x="16" y="11" text-anchor="middle" class="ss-chip-t">GPS</text></g></g>
+              <g id="ssCar" transform="translate(556 306)"><g class="ss-flip"><g class="v-body"><path d="M-17.5-2.5-14-3l3.5-5.2h17.8L11-3l5.4 1a1.6 1.6 0 0 1 1.3 1.6V4h-35.2z" fill="#3f5f45" stroke="#0d1a16" stroke-width=".8"/><path d="M-9.2-6.8h6.6V-3h-9.2zM-1.2-6.8h7.6L9-3H-1.2z" fill="#cfe3ea"/><g fill="#0d1a16" stroke="#f5f8f6" stroke-width="1.1"><circle cx="-10.5" cy="4.6" r="3.2"/><circle cx="10" cy="4.6" r="3.2"/></g></g></g><g transform="translate(-16 -28)"><rect width="32" height="15" rx="7.5" class="ss-chip ss-chip-gps"/><text x="16" y="11" text-anchor="middle" class="ss-chip-t">GPS</text></g></g>
+              <!-- legend -->
+              <g transform="translate(22 368)" class="ss-legend"><circle r="4" cx="4" cy="-4" fill="#c8945e"/><text x="14" y="0" data-i18n="schemeLegendSat">Starlink: база, буровая, транспорт</text><circle r="4" cx="236" cy="-4" fill="#5ec8ff"/><text x="246" y="0" data-i18n="schemeLegendGps">GPS: водовоз и вахтовая машина</text></g>
+            </svg>
+            <div class="ss-status" id="ssStatus" aria-hidden="true"></div>
+            <span class="ops-illustration-label" data-i18n="schemeBadge">СХЕМА · БЕЗ КООРДИНАТ</span>
           </div>
-          <p>Проектируем рабочий процесс под цели заказчика, геологические условия, сроки и стандарты HSE.</p>
-        </div>
-        <div class="cards three">
-          <article class="service-card">
-            <span>01</span>
-            <h3>Алмазное колонковое бурение</h3>
-            <p>Разведочное бурение HQ/NQ/BQ на глубину до 1 500 м, высокий выход керна и полный геологический контроль.</p>
-          </article>
-          <article class="service-card">
-            <span>02</span>
-            <h3>Полный цикл сопровождения</h3>
-            <p>Мобилизация, логистика, работа с керном, распиловка и описание керна, документация KAZRC, зимнее бурение.</p>
-          </article>
-          <article class="service-card">
-            <span>03</span>
-            <h3>Субподрядное бурение</h3>
-            <p>Работа с крупными подрядчиками, оптимизация буровой программы, соблюдение сроков и HSE-стандартов клиента.</p>
-          </article>
+</div>
+          <div class="ops-bottom"><div><span data-i18n="opsIndicator">ЧТО ВИДНО</span><strong data-i18n="opsState">База, буровая и транспорт на связи; техника видна по GPS</strong></div><div><span data-i18n="opsNext">ЭТАП</span><strong data-i18n="opsPhase">2026 / РАБОТАЕТ НА ОБЪЕКТАХ</strong></div></div>
         </div>
       </div>
     </section>
 
-    <section class="section fleet" id="fleet">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker">Парк оборудования</div>
-            <h2>Установки мирового класса для глубокого бурения</h2>
-          </div>
-          <p>Техника подобрана для производительности, мобильности и работы в сложных геологических условиях.</p>
-        </div>
-        <div class="fleet-grid">
-          <article class="rig-card featured">
-            <div class="tag">Глубокое алмазное</div>
-            <h3>Boyles C6</h3>
-            <p class="muted">Epiroc · Швеция · 2021</p>
-            <p>Профессиональная установка для глубокого алмазного бурения. Высокая производительность в твёрдых породах, на базе шасси — быстрая мобилизация.</p>
-          </article>
-          <article class="rig-card">
-            <div class="tag">Универсальная</div>
-            <h3>CDH 1600</h3>
-            <p class="muted">Китай · 2025</p>
-            <p>Новая буровая установка CDH-1600 на усиленном гусеничном шасси с дистанционным пультом управления.</p>
-          </article>
-          <article class="rig-card">
-            <div class="tag">Универсальная</div>
-            <h3>ZQ 2000</h3>
-            <p class="muted">Китай · 2025</p>
-            <p>Универсальная установка с высокой тягой, рассчитанная на большую глубину бурения.</p>
-          </article>
-          <article class="rig-card">
-            <div class="tag">Универсальная</div>
-            <h3>CDH 1600</h3>
-            <p class="muted">Китай · 2025</p>
-            <p>Дополнительная установка для параллельного выполнения буровых программ и повышения темпа работ.</p>
-          </article>
+    <section class="section section-strategy" id="strategy">
+      <div class="container"><div class="section-heading-row reveal"><div><div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="strategyEyebrow">STRATEGY / 2026–2028</span></div><h2 data-i18n="strategyTitle">Наша операционная система будущего.</h2></div><p data-i18n="strategyIntro">Шесть принципов, один вектор: сделать удалённые проекты более управляемыми, безопасными и ресурсосберегающими.</p></div>
+        <div class="strategy-wordline" aria-label="Connected, Visible, Transparent, Safe, Energy Efficient, Low Emission"><span>CONNECTED</span><b>/</b><span>VISIBLE</span><b>/</b><span>TRANSPARENT</span><b>/</b><span>SAFE</span><b>/</b><span>ENERGY EFFICIENT</span><b>/</b><span>LOW EMISSION</span></div>
+        <div class="strategy-steps">
+          <article class="strategy-step reveal"><span class="step-year">2026</span><div class="step-rail"><i></i></div><div><div class="step-status implemented"><i></i><span data-i18n="statusImplemented">ВНЕДРЕНО В 2026</span></div><h3 data-i18n="roadmap1Title">Основа: связь и HSE</h3><p data-i18n="roadmap1Text">Система документов, тренинги, средства безопасности, Starlink и Garmin GPS в полевых операциях.</p></div></article>
+          <article class="strategy-step reveal"><span class="step-year">2027 <small>H1</small></span><div class="step-rail"><i></i></div><div><div class="step-status"><span data-i18n="statusPlanned">ПЛАН</span></div><h3 data-i18n="roadmap2Title">Видимость и измерения</h3><p data-i18n="roadmap2Text">Карта операций, GPS объектов, одна камера по запросу, базовая оценка расхода топлива и генераторных часов.</p></div></article>
+          <article class="strategy-step reveal"><span class="step-year">2027 <small>H2</small></span><div class="step-rail"><i></i></div><div><div class="step-status"><span data-i18n="statusPilot">ПИЛОТ</span></div><h3 data-i18n="roadmap3Title">Пилот энергоэффективности</h3><p data-i18n="roadmap3Text">Измерение нагрузки лагеря, smart metering и пилот гибридного питания для вспомогательных потребителей. Дизель сохраняется как резерв.</p></div></article>
+          <article class="strategy-step reveal"><span class="step-year">2028</span><div class="step-rail"><i></i></div><div><div class="step-status"><span data-i18n="statusGoal">ЦЕЛЬ</span></div><h3 data-i18n="roadmap4Title">Масштабирование решений</h3><p data-i18n="roadmap4Text">Стандартизация доказавших эффективность решений: подключённый объект, измеряемая эффективность, снижение удельных выбросов.</p></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section projects" id="projects">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker">Проекты</div>
-            <h2>Реализованные кейсы и работающие клиенты</h2>
-          </div>
-          <p>Опыт на проектах ключевых игроков отрасли. Готовы к проектам в золоте, меди и полиметаллах.</p>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-type">Услуги бурения по KAZRC</div>
-            <h3>ТОО «Сункаруя»</h3>
-            <ul>
-              <li>Разведочное бурение</li>
-              <li>Распиловка керна</li>
-              <li>Полная документация и описание керна</li>
-            </ul>
-          </article>
-          <article class="project-card">
-            <div class="project-type">Субподрядное бурение</div>
-            <h3>BMT Holding</h3>
-            <ul>
-              <li>Разведочные и оценочные работы</li>
-              <li>Завершение проекта раньше сроков</li>
-              <li>Оптимизация буровой программы</li>
-              <li>Полный цикл сопровождения</li>
-            </ul>
-          </article>
-          <article class="project-card">
-            <div class="project-type">Горнодобывающая отрасль</div>
-            <h3>ТОО Argelum</h3>
-            <ul>
-              <li>Разведочные и оценочные работы</li>
-              <li>Полный цикл сопровождения</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
+    <section class="section section-governance" id="governance"><div class="container governance-grid"><figure class="governance-media">
+          <video class="auto-video" src="assets/video/field-reel.mp4" poster="assets/video/field-reel-poster.jpg" muted loop playsinline preload="none" aria-label="Видео с объекта: буровая, база, водовоз, техника, вечер и ночная смена" data-i18n-aria="reelAria"></video>
+          <button class="video-toggle" type="button" aria-label="Пауза" data-i18n-aria="videoPause"><span aria-hidden="true"></span></button>
+          <figcaption><span class="caption-dot"></span><span data-i18n="reelCaption">С ОБЪЕКТА · НОЯБРЬ 2026</span></figcaption>
+        </figure><div class="governance-copy reveal"><div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="governanceEyebrow">GOVERNANCE / TRANSPARENCY</span></div><h2 data-i18n="governanceTitle">Прозрачность — не обещание. Это процесс.</h2><p class="lead" data-i18n="governanceLead">Мы укрепляем корпоративное управление через документированные операционные процедуры, стандарты HSE и регулярную отчётность для заказчика.</p><p data-i18n="governanceField">Прозрачность начинается на объекте: заказчик видит буровую, лагерь, медпункт и технику такими, какие они есть, а сводки бурения получает после каждой смены.</p><p data-i18n="governanceBody">Независимый аудит финансовой отчётности и публикация подтверждённых показателей рассматриваются как следующий этап развития. Неаудированные финансовые данные на сайте не публикуются.</p><div class="governance-status"><i></i><span data-i18n="governanceBadge">ПУБЛИКАЦИЯ АУДИРОВАННОЙ ОТЧЁТНОСТИ — В ПЛАНАХ</span></div></div></div></section>
 
-    <section class="section hse" id="hse">
-      <div class="container two-col">
-        <div>
-          <div class="section-kicker">Безопасность и лицензии</div>
-          <h2>HSE-стандарты и разрешительная документация</h2>
-          <p class="hse-lead">Безопасность — приоритет №1. Цель компании — ноль происшествий на проектах.</p>
-        </div>
-        <div class="hse-grid">
-          <article>
-            <h3>HSE-подход</h3>
-            <ul>
-              <li>Внутренние стандарты HSE для каждого объекта</li>
-              <li>Инструктаж и обучение персонала перед мобилизацией</li>
-              <li>Регулярные проверки оборудования и СИЗ</li>
-              <li>Контроль подрядчиков и соблюдение норм клиента</li>
-            </ul>
-          </article>
-          <article>
-            <h3>Разрешения</h3>
-            <ul>
-              <li>Лицензия на проведение буровых работ РК</li>
-              <li>Аттестация специалистов</li>
-              <li>Разрешения на работу с опасными производственными объектами</li>
-              <li>Подготовка к сертификации ISO 45001</li>
-            </ul>
-          </article>
-          <article>
-            <h3>Качество и отчётность</h3>
-            <ul>
-              <li>Документация в соответствии с KAZRC / JORC</li>
-              <li>Контроль выхода керна и геологическое сопровождение</li>
-              <li>Регулярная отчётность заказчику в согласованном формате</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
+    <section class="section section-news" id="updates"><div class="container"><div class="section-heading-row reveal"><div><div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="updatesEyebrow">INSIGHTS / COMPANY UPDATES</span></div><h2 data-i18n="updatesTitle">Наш путь в развитии.</h2></div><p data-i18n="updatesIntro">Ключевые этапы работы и развития компании. Для официальной публикации новости проходят согласование.</p></div>
+      <div class="news-grid"><article class="news-card reveal"><div class="news-art news-art-1"><span>2026</span><img src="assets/photos/news-night-shift.jpg" alt="Буровая в вечернюю смену" loading="lazy" data-i18n-alt="newsAlt1"></div><span class="news-meta" data-i18n="newsDate1">2026 · ПРОИЗВОДСТВО</span><h3 data-i18n="news1Title">Более 15 000 метров: развитие полевых работ</h3><p data-i18n="news1Text">Рост буровых операций и укрепление работы с международными заказчиками.</p></article><article class="news-card reveal"><div class="news-art news-art-2"><span>HSE</span><img src="assets/photos/news-hse-wall.jpg" alt="Стенд ОТ и ТБ с логотипом JexCore в офисе лагеря" loading="lazy" data-i18n-alt="newsAlt2"></div><span class="news-meta" data-i18n="newsDate2">2026 · СИСТЕМА HSE</span><h3 data-i18n="news2Title">110+ управляемых документов. Один стандарт работы.</h3><p data-i18n="news2Text">Завершён этап подготовки и внедрения корпоративной системы HSE.</p></article><article class="news-card reveal"><div class="news-art news-art-3"><span>2027 →</span><img src="assets/photos/ops-map-concept.svg" alt="Буровые работы JexCore" loading="lazy" data-i18n-alt="newsAlt3"></div><span class="news-meta" data-i18n="newsDate3">2027–2028 · СТРАТЕГИЯ</span><h3 data-i18n="news3Title">Connected. Visible. Safe. Efficient.</h3><p data-i18n="news3Text">Развитие цифровой карты операций и пилот энергоэффективного полевого лагеря.</p></article></div>
+      <p class="news-disclaimer" data-i18n="newsDisclaimer">Раздел содержит подготовленные редакционные анонсы. До размещения на действующем сайте тексты и упоминания клиентов подлежат утверждению.</p></div></section>
 
-    <section class="cta" id="contacts">
-      <div class="container cta-inner">
-        <div>
-          <div class="section-kicker light">Контакты</div>
-          <h2>Обсудим ваш проект и подготовим коммерческое предложение</h2>
-        </div>
-        <div class="contacts-card">
-          <a href="tel:+77015201785"><span>Телефон</span>+7 701 520 17 85</a>
-          <a href="tel:+77478041547"><span>Телефон</span>+7 747 804 15 47</a>
-          <a href="mailto:desk@jexcore.kz"><span>E-mail</span>desk@jexcore.kz</a>
-          <p><span>Офис</span>г. Алматы, пр. Аль-Фараби 7к5а, 29 этаж, офис 338</p>
-        </div>
-      </div>
-    </section>
+    <section class="contact-section" id="contact"><div class="container contact-inner"><div><div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="contactEyebrow">LET'S WORK TOGETHER</span></div><h2 data-i18n="contactTitle">Следующий проект начинается с разговора.</h2><p data-i18n="contactIntro">Обсудим программу бурения, доступность техники, требования HSE и подготовку к мобилизации.</p><div class="contact-cta"><a href="mailto:desk@jexcore.kz?subject=Drilling%20programme%20inquiry" class="button button-light"><span data-i18n="contactButton">Отправить запрос</span><span aria-hidden="true">↗</span></a></div></div><div class="contact-detail"><span data-i18n="contactEmailLabel">ЭЛЕКТРОННАЯ ПОЧТА</span><a href="mailto:desk@jexcore.kz">desk@jexcore.kz</a><span data-i18n="contactPhoneLabel">ТЕЛЕФОН</span><a href="tel:+77015201785">+7 701 520 17 85</a><a href="tel:+77478041547">+7 747 804 15 47</a><span data-i18n="contactLocationLabel">ОФИС</span><p data-i18n="contactAddress">г. Алматы, пр. Аль-Фараби, 7к5а, 29 этаж, офис 338</p></div></div></section>
   </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>© 2026 JexCore Drilling</div>
-      <div>Алмазное бурение · Субподрядное бурение · Геологоразведка</div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+  <footer class="site-footer"><div class="container footer-inner"><div><div class="footer-logo">JEXCORE <span>DRILLING</span></div><span class="footer-small" data-i18n="footerTag">ENGINEERED TO DELIVER · KAZAKHSTAN</span></div><div class="footer-middle"><span data-i18n="footerPartner">IN PARTNERSHIP WITH</span><strong>APOLLO RESOURCES GROUP</strong></div><div class="footer-end"><a href="#top" data-i18n="footerTop">НАВЕРХ ↑</a><span>© 2026 JexCore Drilling LLP</span></div></div></footer>
+  <script src="script.js" defer></script>
+  <script src="site-scheme.js" defer></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"JexCore Drilling","url":"https://www.jexcore.kz/","email":"desk@jexcore.kz","telephone":"+7 701 520 17 85","address":{"@type":"PostalAddress","streetAddress":"7k5a Al-Farabi Ave., Office 338","addressLocality":"Almaty","addressCountry":"KZ"}}</script>
 </body>
 </html>
